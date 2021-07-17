@@ -60,39 +60,40 @@ namespace Example_1
                     break;
             }
 
-                    //    case '1':
-                    //        curs_cny* togle_usd;
-                    //        break;
+            //    case '1':
+            //        curs_cny* togle_usd;
+            //        break;
 
-                    //    case '2':
-                    //        togle_usd* curs_uah;
-                    //        break;
+            //    case '2':
+            //        togle_usd* curs_uah;
+            //        break;
 
-                    //    case '3':
-                    //        curs_gbp* togle_usd;
-                    //        break;
+            //    case '3':
+            //        curs_gbp* togle_usd;
+            //        break;
 
-                    //    case '4':
-                    //        curs_eur* togle_usd;
-                    //        break;
+            //    case '4':
+            //        curs_eur* togle_usd;
+            //        break;
 
-                    //    case '5':
-                    //        togle_usd* curs_kzt;
-                    //        break;
+            //    case '5':
+            //        togle_usd* curs_kzt;
+            //        break;
 
-                    //    case '6':
-                    //        curs_uzs* togle_usd;
-                    //        break;
+            //    case '6':
+            //        curs_uzs* togle_usd;
+            //        break;
 
-                    //    case '7':
-                    //        curs_gold* togle_usd;
-                    //        break;
+            //    case '7':
+            //        curs_gold* togle_usd;
+            //        break;
 
-                    //    case '8':
-                    //        togle_usd* curs_sek;
-                    //        break;
-                    //}
-            }
+            //    case '8':
+            //        togle_usd* curs_sek;
+            //        break;
+            //}
+            textBox2.Text = Convert.ToString();
+        }
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -103,11 +104,6 @@ namespace Example_1
         {
             Application.Exit();
             return;
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }
