@@ -12,7 +12,7 @@ namespace Example_1
 {
     public partial class Form1 : Form
     {
-        public const double curs_rub = 76.3802;
+        public const double curs_rub = 76.3802; // Константные переменные курса валют
         public const double curs_cny = 0.1527;
         public const double curs_uah = 0.0359;
         public const double curs_gbp = 1.3853;
@@ -24,28 +24,23 @@ namespace Example_1
 
         public static class Globals
         {
-            public static double togle_usd = 1;
+            public static double togle_usd = 0; //Глобальная перемення введеной суммы пользователем
         }
 
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int index = comboBox1.FindString(comboBox1.Text);
+            int index = comboBox1.FindString(comboBox1.Text); //Считываем из comboBox'а идекс элементов и записываем в index
             comboBox1.SelectedItem = index;
 
-            //textBox2.Text = Convert.ToString(t); // Вывод теекста в textBox2
-
-            switch (index)
+            switch (index)  //Логика всей программы 'comboBox как и большенство исчислений начинаются с 0'
             {
                 case 0:
-                    double result0 = Globals.togle_usd / curs_rub;
-
-                    textBox2.Text = Convert.ToString(result0);
+                    textBox2.Text = Convert.ToString(Globals.togle_usd / curs_rub); //Выполняем математические вычисления и выводим резульат в textBox2
             break;
 
                 case 1:
@@ -80,22 +75,22 @@ namespace Example_1
                     textBox2.Text = Convert.ToString(Globals.togle_usd * curs_sek);
             break;
             }
-     
         }
-        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e) //открытие окна с информацией
         {
-            MessageBox.Show("Программа конвертирует разные валюты и USD", "О программе");
+            MessageBox.Show(" Программа конвертирует разные валюты и USD\n По вопросам обновления курса валют писать в VK:\n vk.com/shadowsotrmone", "О программе");
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); //Выход из программы по нажатию кнопки Выхода
             return;
         }
 
         public void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            Globals.togle_usd = Convert.ToDouble(numericUpDown1.Value);
-        }
+            Globals.togle_usd = Convert.ToDouble(numericUpDown1.Value); //Считываем значние введеное пользователем и записываем
+        }                                                               //в togle_usd
     }
 }
