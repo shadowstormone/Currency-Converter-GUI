@@ -12,7 +12,7 @@ namespace Example_1
 {
     public partial class Form1 : Form
     {
-        public const double curs_rub = 76.3802; // Константные переменные курса валют
+        public const double curs_rub = 76.3802; // Константные курса валют
         public const double curs_cny = 0.1527;
         public const double curs_uah = 0.0359;
         public const double curs_gbp = 1.3853;
@@ -79,7 +79,7 @@ namespace Example_1
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e) //открытие окна с информацией
         {
-            MessageBox.Show(" Программа конвертирует разные валюты и USD\n По вопросам обновления курса валют писать в VK:\n vk.com/shadowsotrmone", "О программе");
+            MessageBox.Show(" Программа конвертирует разные валюты и USD\n По вопросам обновления курса валют писать в VK:\n vk.com/shadowstormone", "О программе");
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
